@@ -14,5 +14,6 @@ const styles = StyleSheet.create({
     color: "red",
     alignItems: "center",
     textAlign: "center",
+    textTransform: "uppercase",
   },
 });
