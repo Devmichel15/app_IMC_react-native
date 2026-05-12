@@ -4,8 +4,7 @@ import { Button } from "./Button";
 import { Calculate } from "../services/Calculate";
 import { useState } from "react";
 import { Result } from "./Result";
-import { Modal } from "./Modal";
-
+import { CustomModal } from "./CustomModal";
 
 export const Main = () => {
   const [height, setHeight] = useState("");
@@ -30,7 +29,9 @@ export const Main = () => {
       />
       <Button name="Calcular" onPress={handleSubmit} />
       {result !== "" && <Result value={result} />}
-     {visible && <Modal/>}
+      {visible && (
+        <CustomModal visible={visible} close={() => setVisible(false)} value={result} />
+      )}
     </View>
   );
 };
