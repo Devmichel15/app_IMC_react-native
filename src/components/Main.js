@@ -32,6 +32,7 @@ export const Main = () => {
       {visible && (
         <CustomModal visible={visible} close={() => setVisible(false)} value={result} />
       )}
+      <Text style={styles.description}>Preencha os campos acima</Text>
     </View>
   );
 };
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     padding: 20,
     width: "100%",
-    height: 700,
+    height: 600,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },
@@ -51,4 +52,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: "center",
   },
+  description: {
+    fontSize: 16,
+    textAlign: "center",
+    marginTop: 10,
+  }
 });
