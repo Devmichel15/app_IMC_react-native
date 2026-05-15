@@ -1,1 +1,1 @@
-# create my first App whith ReactNative
+# create my first App with ReactNative
